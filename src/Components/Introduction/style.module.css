@@ -1,0 +1,107 @@
+.landing{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+     
+    .sliderContainer{
+      position: absolute;
+      top:0;
+    }
+    
+    .slider{
+      position: relative;
+      white-space: nowrap;
+    }
+    
+    .slider p{
+      position: relative;
+      margin: 0px;
+      color: white;
+      font-size: 230px;
+      font-weight: 500;
+      padding-right: 50px;
+    }
+    
+    .slider p:nth-of-type(2){
+      position: absolute;
+      left: 100%;
+      top: 0;
+    }
+  
+    .description{
+      position: absolute;
+      top: 40%;
+      color: black;
+      font-size: clamp(1.55em, 2.3vw, 2.5em);
+      font-weight: 700;
+      p{
+        font-size: clamp(1.55em, 2.3vw, 2.5em);
+        margin: 0px;
+        margin-bottom: 10px;
+      }
+      svg{
+        transform: scale(2);
+        margin-bottom: 100px;
+      }
+    }
+  }
+  
+/* Media Queries for additional adjustments */
+@media (max-width: 768px) {
+    .landing .slider p {
+        font-size: 100px; /* Smaller font size for smaller screens */
+    }
+
+    .landing .description {
+        top: 30%;
+        font-size: 60px; /* Smaller font size for smaller screens */
+    }
+
+    .landing .description svg {
+        transform: scale(1.5); /* Adjust scale for smaller screens */
+        margin-bottom: 50px;
+    }
+}
+.button{
+  width: 180px;
+  height: 180px;
+  background-color: #455CE9;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  p{
+      margin: 0px;
+      font-size: 16px;
+      font-weight: 300;
+      z-index: 2;
+      position: relative;
+  }
+}
+svg{
+  position: absolute;
+  top: 30%;
+  left: 100%;
+}
+@media (max-width: 480px) {
+    .landing .slider p {
+        font-size: 70px; /* Further reduction for very small screens */
+    }
+
+    .landing .description {
+        top: 20%;
+        font-size: 40px; /* Further reduction for very small screens */
+    }
+
+    .landing .description svg {
+        transform: scale(1); /* Further adjustment for very small screens */
+        margin-bottom: 30px;
+    }
+}
