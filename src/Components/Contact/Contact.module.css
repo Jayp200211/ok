@@ -149,7 +149,7 @@
     margin-right: 20px;
   }
 }
-@media (max-width: 390px) { /* Adjust breakpoint as needed */
+@media (max-width: 395px) { /* Adjust breakpoint as needed */
     .info > div {
         gap: 0 !important;
     }
