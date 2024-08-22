@@ -30,13 +30,14 @@ const Project = ({ project }) => {
         className={styles.imgContainer}
       >
 {isVideo ? (
-  <iframe 
-    src={`https://www.youtube.com/embed/${src}`} 
-    controls 
-    autoPlay 
-    loop 
-    muted 
-    className={styles.media}
+    <iframe
+    width="560"
+    height="315"
+    src={`https://www.youtube.com/embed/${src}`}
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+    title="YouTube video player"
   />
 )
 :(
