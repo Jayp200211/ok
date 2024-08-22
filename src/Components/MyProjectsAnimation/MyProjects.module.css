@@ -1,6 +1,6 @@
 .gallery {
     height: 175vh;
-    background: rgb(45, 45, 45);
+    background: #141516;
     position: relative;
     display: flex;
     justify-content: space-around;

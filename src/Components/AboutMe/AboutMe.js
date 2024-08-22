@@ -69,7 +69,7 @@ const AboutMe = () => {
 
   return (
     <div className={styles.div1}>
-      <div ref={description} style={{ position: 'sticky', top: '0' ,flex:'1'}}>
+      <div ref={description} style={{ flex:'1'}}>
         <p className={styles.title}>About Me</p>
       </div>
       <div ref={container} className={styles.rightDiv}>

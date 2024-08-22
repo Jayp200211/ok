@@ -1,15 +1,17 @@
 .overflow {
-  margin-top: 20px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-    background-color: #961ba9;
+    background-color: #141516;
+  
   }
 .overflow-hidden {
   margin-top: 20px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
     overflow: hidden;
-    background-color: #961ba9;
   }
   
   .full-height {
@@ -31,8 +33,8 @@
   }
   
   .phrase-text {
-    color:white;
-    font-size: 7.5vw; /* This might need adjustment based on design */
+    color:whitesmoke;
+    font-size: 10.5vw; /* This might need adjustment based on design */
   }
   
   .image-container {

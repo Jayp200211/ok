@@ -58,7 +58,7 @@ export default function Home() {
     { title1: "Spotify ", title2: "App", src: "spotifyWeb.mp4" },
     { title1: "Recipe", title2: "Website", src: "recipeweb.mp4" },
     { title1: "Book", title2: "Store", src: "bookapp.mp4" },
-    { title1: "Employee", title2: "Management", src: "attendance.JPG" },
+    { title1: "Emp", title2: "Mngmt", src: "attendance.JPG" },
     { title1: "My", title2: "Portfolio", src: "porfolio.mp4" },
     { title1: "X", title2: "O", src: "notavail.jpeg" },
     { title1: "ATM", title2: "Machine", src: "notavail.jpeg" },
