@@ -75,16 +75,6 @@ export default function Introduction() {
         clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" 
       }}
     >
-       <div>
-              <Rounded 
-                backgroundColor={"#334BD3"} 
-                className={styles.button}
-                onClick={handleDownload}
-              >
-              
-                <p>Download CV</p>
-              </Rounded>
-            </div>
       <div 
         style={{ 
           position: "relative", 
@@ -113,7 +103,16 @@ export default function Introduction() {
             <div ref={description} className={styles.description}>  {/* Ref added here */}
               <p>Jean-Pierre Nakhoul</p>
             </div>
-           
+            <div>
+              <Rounded 
+                backgroundColor={"#334BD3"} 
+                className={styles.button}
+                onClick={handleDownload}
+              >
+              
+                <p>Download CV</p>
+              </Rounded>
+            </div>
           </motion.main>
         </div>
       </div>
