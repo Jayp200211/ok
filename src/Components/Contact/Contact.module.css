@@ -23,7 +23,6 @@
         position: fixed;
         bottom: 0;
         width: 100%;
-        height:85%;
         background-color: #141516;
 
         .title{
@@ -93,7 +92,7 @@
         .info{
             display: flex;
             justify-content: space-between;
-            margin-top: 150px;
+            margin-top: 150px   ;
             padding: 20px;
             div{
                 display: flex;
@@ -149,7 +148,7 @@
     margin-right: 20px;
   }
 }
-@media (max-width: 395px) { /* Adjust breakpoint as needed */
+@media (max-width: 390px) { /* Adjust breakpoint as needed */
     .info > div {
         gap: 0 !important;
     }
