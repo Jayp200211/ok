@@ -37,8 +37,6 @@ const Project = ({ project }) => {
 />
 ):(
     <iframe
-    width="560"
-    height="315"
     src={`https://www.youtube.com/embed/${src}`}
     frameBorder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -57,10 +55,10 @@ const Project = ({ project }) => {
 export default function Home() {
   const projects = [
     { title1: "Spotify ", title2: "App", src: "spotifyWeb.mp4" },
-    { title1: "Recipe", title2: "Website", src: "_nR_3o4OWFw" },
-    { title1: "Book", title2: "Store", src: "bookapp.mp4" },
+    { title1: "Recipe", title2: "Website", src: "gjIY8NzKzVA" },
+    { title1: "Book", title2: "Store", src: "_nR_3o4OWFw" },
     { title1: "Emp", title2: "Mngmt", src: "attendance.JPG" },
-    { title1: "My", title2: "Portfolio", src: "porfolio.mp4" },
+    { title1: "My", title2: "Portfolio", src: "R8LH5lzbECA" },
     { title1: "X", title2: "O", src: "notavail.jpeg" },
     { title1: "ATM", title2: "Machine", src: "notavail.jpeg" },
     { title1: "Game", title2: "Store", src: "notavail.jpeg" },
