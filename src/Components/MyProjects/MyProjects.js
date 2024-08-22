@@ -30,15 +30,16 @@ const Project = ({ project }) => {
         className={styles.imgContainer}
       >
 {isVideo ? (
-<video 
-            src={`/ProjectVideos/${src}`} 
-            controls 
-            autoPlay 
-            loop 
-            muted
-            className={styles.media}
-          />
-):(
+  <iframe 
+    src={`https://youtu.be/${src}`} 
+    controls 
+    autoPlay 
+    loop 
+    muted 
+    className={styles.media}
+  />
+)
+:(
   <img 
   src={`/ProjectVideos/${src}`} 
   alt={title1} 
@@ -56,7 +57,7 @@ const Project = ({ project }) => {
 export default function Home() {
   const projects = [
     { title1: "Spotify ", title2: "App", src: "spotifyWeb.mp4" },
-    { title1: "Recipe", title2: "Website", src: "recipeweb.mp4" },
+    { title1: "Recipe", title2: "Website", src: "_nR_3o4OWFw" },
     { title1: "Book", title2: "Store", src: "bookapp.mp4" },
     { title1: "Emp", title2: "Mngmt", src: "attendance.JPG" },
     { title1: "My", title2: "Portfolio", src: "porfolio.mp4" },
