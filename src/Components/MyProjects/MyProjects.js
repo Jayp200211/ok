@@ -31,7 +31,7 @@ const Project = ({ project }) => {
       >
 {isVideo ? (
   <iframe 
-    src={`https://youtu.be/${src}`} 
+    src={`https://www.youtube.com/embed/${src}`} 
     controls 
     autoPlay 
     loop 
