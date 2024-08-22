@@ -85,7 +85,7 @@ const Column = ({ images, y, scale, style }) => {
             >
               <img
         fill
-                src={`/images/${src}`}
+                src={`/Images/${src}`}
                 alt="image"
               />
               <div style={{height: '100vh'}}></div>
