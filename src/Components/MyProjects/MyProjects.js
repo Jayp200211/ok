@@ -16,7 +16,7 @@ const Project = ({ project }) => {
 
   const { title1, title2, src } = project;
   const isVideo = src.endsWith('.mp4') || src.endsWith('.webm') || src.endsWith('.ogg');
-
+  const isImg= src.endsWith('.JPG') || src.endsWith('.jpeg');
   return (
     <div
       onMouseEnter={() => setIsActive(true)}
@@ -29,7 +29,13 @@ const Project = ({ project }) => {
         animate={isActive ? "open" : "closed"}
         className={styles.imgContainer}
       >
-{isVideo ? (
+          {isImg ? ( 
+             <img 
+  src={`/ProjectVideos/${src}`} 
+  alt={title1} 
+  className={styles.media} 
+/>
+):(
     <iframe
     width="560"
     height="315"
@@ -39,13 +45,6 @@ const Project = ({ project }) => {
     allowFullScreen
     title="YouTube video player"
   />
-)
-:(
-  <img 
-  src={`/ProjectVideos/${src}`} 
-  alt={title1} 
-  className={styles.media} 
-/>
 )
 }
       </motion.div>
