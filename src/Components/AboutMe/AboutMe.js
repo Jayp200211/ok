@@ -11,7 +11,7 @@ const AboutMe = () => {
   const description = useRef(null);
   const refs = useRef([]);
   const container = useRef(null);
-
+   const div = useRef(null);
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     createAnimation();
@@ -43,7 +43,28 @@ const AboutMe = () => {
       return <span key={letter + "_" + i} ref={el => { if (el && !refs.current.includes(el)) refs.current.push(el); }}>{letter}</span>;
     });
   };
-
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+  
+    gsap.fromTo(div.current,
+      {
+        scale: 1, // Start at normal size
+        x: 0,
+      },
+      {
+        scale: 0.8, // Shrink to 40% of the original size
+        ease: 'none',
+        scrollTrigger: {
+          trigger: div.current,
+          scrub: 0.5,
+          start: 'bottom bottom', // Start shrinking when the bottom of the div reaches the bottom of the viewport
+          end: 'bottom top',  // End shrinking when the bottom of the div reaches the top of the viewport
+        },
+      }
+    );
+  }, []);
+  
+  
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -68,7 +89,7 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <div className={styles.div1}>
+    <div className={styles.div1} ref={div}>
       <div ref={description} style={{ flex:'1'}}>
         <p className={styles.title}>About Me</p>
       </div>
