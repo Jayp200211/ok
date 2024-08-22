@@ -84,8 +84,9 @@ const Column = ({ images, y, scale, style }) => {
               style={scaleStyle}
             >
               <img
+        fill
                 src={`/images/${src}`}
-                alt='image'
+                alt="image"
               />
               <div style={{height: '100vh'}}></div>
             </motion.div>
